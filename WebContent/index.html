@@ -267,7 +267,7 @@
                 <ul class="service-ul"> 
                 <!-- 여기에 각자 적으세요 -->
                 	<li> <b>강주연 </b> 타이쿤게임</li>
-                	<li> <b>예강훈 </b> </li>
+                	<li> <b>예강훈 </b> 취향에 맞는 음악추천</li>
                         <li> <b>최혜인 </b> 쉽고 간단한거</li>
                         <li><b>김윤석 </b> </li>
                         <li> <b>황종윤 </b> 오늘의 운세, 타로카드</li>
@@ -347,13 +347,19 @@
               </div>
             </form>
             <script type="text/javascript">
-            var box = 
+            var box = document.getElementsById('msgBox');
             function sendMessage(){
-            	
+            	var name = document.forms.editor.name.value;
+            	var subject = document.forms.editor.subject.value;
+            	var message = document.forms.editor.message.value;
             }
             </script>
-            <table id="messageBox">
-            <tr></tr>
+            <table id="msgBox">
+            <tr>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>내용</th>
+            </tr>
             
             </table>
             
@@ -392,8 +398,7 @@
           <div class="wow shake" data-wow-delay="0.4s">
             <div class="page-scroll marginbot-30">
               <a href="#intro" id="totop" class="btn btn-circle">
-							<i class="fa fa-angle-double-up animated"></i>
-						</a>
+				<i class="fa fa-angle-double-up animated"></i></a>
             </div>
           </div>
           <p>&copy;SquadFREE. All rights reserved.<br><b>and team one</b></p>
